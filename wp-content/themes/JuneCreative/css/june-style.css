@@ -1,0 +1,257 @@
+@font-face {
+    font-family: Blair;
+    src: url(../fonts/Blair\ ITC\ Std\ Light.otf);
+}
+
+@font-face {
+    font-family: CanvasLight;
+    src: url(../fonts/MADE\ Canvas\ Light\ PERSONAL\ USE.ttf);
+}
+
+@font-face {
+    font-family: BlairBold;
+    src: url(../fonts/Blair\ ITC\ Std\ Bold.otf);
+}
+
+@font-face {
+    font-family: Gillsans;
+    src: url(../fonts/GILSANUB.TTF);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Blair';
+}
+
+.header-desktop-section {
+    font-size: 15px;
+    height: 50px;
+}
+
+.header-desktop-menu-list {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+
+.header-desktop-menu-list li {
+    margin-right: 20px;
+}
+
+.header-desktop-menu-list li a {
+    text-decoration: none;
+    color: black;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.header-desktop-menu-list li a:hover {
+    font-family: 'BlairBold';
+}
+
+
+/* pop up */
+
+.modal-wrapper.styled .wp-post-modal {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+#modal-ready {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wp-block-image {
+    width: 100% !important;
+}
+
+.wp-block-image img {
+    margin-bottom: 0 !important;
+}
+
+.wp-block-gallery {
+    height: 100vh !important;
+    min-width: 50%;
+    /* overflow: hidden; */
+    overflow-y: auto;
+}
+
+.wp-container-4 {
+    margin-left: 50px;
+}
+
+#wpadminbar {
+    z-index: 99 !important;
+}
+
+.post-tittle {
+    display: block;
+    font-size: 80px;
+    margin-bottom: 0;
+    line-height: 60px;
+}
+
+.wp-container-3 .wp-block-group__inner-container {
+    margin-top: 90px;
+    height: calc(100vh - (160px + 55px));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 1824px) {
+    .wp-container-3 .wp-block-group__inner-container {
+        margin-top: 150px;
+        height: calc(100vh - (160px + 150px));
+    }
+}
+
+.post-content {
+    font-family: 'Gillsans';
+    font-size: 15px;
+    width: 45%;
+    /* margin-bottom: 8rem; */
+}
+
+.post-footer {
+    /* margin-top: 56%; */
+    margin-bottom: 0 !important;
+}
+
+
+/* .wp-container-4 .wp-block-group__inner-container {
+    height: 100%;
+}
+
+.wp-container-3 {
+    height: 100%;
+}
+
+.wp-container-3 .wp-block-group__inner-container {
+    height: 100%;
+} */
+
+#primary {
+    padding: 0 !important;
+}
+
+
+/* list post */
+
+.wrapper {
+    padding: 0 !important;
+}
+
+.menu-work-item a {
+    display: block;
+    text-decoration: none;
+    height: 80px;
+    overflow: hidden;
+    color: black;
+    border: 0.5px solid rgb(255, 255, 255);
+    transition: all .3s;
+}
+
+.menu-work-item a:hover {
+    text-decoration: none;
+    color: black;
+    border: 0.5px solid rgb(0, 0, 0);
+}
+
+.work-title,
+.work-desc {
+    font-size: 80px;
+    line-height: 80px;
+    transition: ease-in .3s;
+    margin-left: 20px;
+}
+
+.work-title {
+    font-weight: 400;
+}
+
+.work-desc {
+    text-transform: uppercase;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.description {
+    font-family: 'CanvasLight';
+}
+
+.menu-work-item a:hover .work-title {
+    transform: translateY(-100%);
+}
+
+.menu-work-item a:hover .work-desc {
+    transform: translateY(-100%);
+}
+
+.work-excerpt p {
+    display: block;
+    margin-bottom: 0 !important;
+    font-size: 12px;
+    /* line-height: 105px; */
+    bottom: -30px;
+    position: absolute;
+    /* align-items: end; */
+    right: 20px;
+    word-spacing: 12px;
+}
+
+.list-post-content {
+    padding-bottom: 60px;
+}
+
+.list-post-footer {
+    padding: 20px 0;
+    margin: 0 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-post-footer::after {
+    width: 100%;
+    height: 0.5px;
+    position: absolute;
+    content: '';
+    top: 0;
+    background: #707070;
+}
+
+.footer-infor {
+    justify-content: space-between;
+    display: flex;
+    width: 35%;
+    margin-right: 5%;
+}
+
+.footer-infor ul {
+    list-style-type: none;
+}
+
+.footer-infor ul li a {
+    text-decoration: none !important;
+    cursor: default;
+    color: black !important;
+}
+
+#author-menu a {
+    display: block;
+    width: 60%;
+}
+
+
+/* list post */
