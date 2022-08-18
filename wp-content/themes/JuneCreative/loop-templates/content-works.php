@@ -38,7 +38,7 @@ defined( 'ABSPATH' ) || exit;
 					<div class="menu-work-item">
 						<a href="<?php the_permalink(); ?>" class="work-item modal-link">
 							
-							<div class="work-title"><?php the_title() ?></div>
+							<p class="work-title"><?php the_title() ?></p>
 							<div class="work-desc"> <div class="description"><?php the_title() ?></div> <div class="work-excerpt"><?php the_excerpt() ?></div> </div>
                          
 						</a>

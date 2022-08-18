@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: Gillsans;
-    src: url(../fonts/GILSANUB.TTF);
+    src: url(../fonts/GillSans-Light-08.ttf);
 }
 
 ::-webkit-scrollbar {
@@ -105,7 +105,7 @@
 
 .wp-container-3 .wp-block-group__inner-container {
     margin-top: 90px;
-    height: calc(100vh - (160px + 55px));
+    height: calc(100vh - (160px + 75px));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -150,6 +150,14 @@
 
 /* list post */
 
+.post-tittle:nth-child(1) {
+    margin-top: 20px;
+}
+
+.modal-wrapper.styled .wp-post-modal .close-modal {
+    top: 0px !important
+}
+
 .wrapper {
     padding: 0 !important;
 }
@@ -157,7 +165,7 @@
 .menu-work-item a {
     display: block;
     text-decoration: none;
-    height: 80px;
+    height: 70px;
     overflow: hidden;
     color: black;
     border: 0.5px solid rgb(255, 255, 255);
@@ -173,6 +181,8 @@
 .work-title,
 .work-desc {
     font-size: 80px;
+    margin-bottom: 0 !important;
+    display: block;
     line-height: 80px;
     transition: ease-in .3s;
     margin-left: 20px;
@@ -206,7 +216,7 @@
     margin-bottom: 0 !important;
     font-size: 12px;
     /* line-height: 105px; */
-    bottom: -30px;
+    bottom: -20px;
     position: absolute;
     /* align-items: end; */
     right: 20px;
@@ -262,3 +272,167 @@
 
 
 /* list post */
+
+
+/* contact */
+
+.contact-content #modal-ready {
+    height: calc(100vh - 80px);
+}
+
+.elementor-82 {
+    width: 90% !important;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    margin: auto auto;
+}
+
+.top-contact {
+    width: 100%;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.top-contact::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #707070;
+    bottom: 0%;
+}
+
+.contact-title {
+    width: 49% !important;
+    margin-bottom: 0 !important;
+}
+
+.contact-desc {
+    width: 50% !important;
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+}
+
+.contact-desc p {
+    font-size: 15px;
+    margin-bottom: 0 !important;
+}
+
+.top-contact .elementor-element-populated {
+    display: flex;
+}
+
+.bottom-contact {
+    width: 100%;
+}
+
+.contact-title p {
+    font-size: 80px;
+    line-height: 65px;
+    margin-bottom: 0 !important;
+}
+
+.contact-info p {
+    margin-bottom: 0% !important;
+    font-size: 15px;
+}
+
+.contact-tech p {
+    margin-bottom: 0% !important;
+    font-size: 15px;
+}
+
+.contact-location p {
+    text-align: end;
+    font-size: 15px;
+    margin-bottom: 0 !important;
+}
+
+.insta-icon {
+    margin-left: 15px !important;
+}
+
+.elementor-widget:not(:last-child) {
+    margin-bottom: 0% !important;
+}
+
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+    padding: 0 !important;
+    padding-top: 15px !important;
+}
+
+
+/* about */
+
+.about-section #modal-ready {
+    height: calc(100vh - 80px);
+}
+
+.about-section .elementor-213 {
+    width: 90% !important;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    margin: auto auto;
+    /* margin-top: 10vw; */
+}
+
+.about-top .logo-about .elementor-widget-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25%;
+}
+
+.about-content .elementor-widget-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-content-left {
+    width: 492px !important;
+    margin-right: 58px;
+}
+
+.about-content-left p {
+    font-size: 15px;
+    font-family: 'Gillsans';
+}
+
+.about-content-right {
+    width: 397px !important;
+    margin-left: 30px;
+}
+
+.about-content-right p {
+    font-size: 15px;
+    font-family: 'Gillsans';
+    margin-bottom: 0 !important;
+}
+
+.slogan-content p {
+    font-size: 80px;
+    text-align: end;
+    margin-top: 100px;
+    /* line-height: 40px; */
+}
+
+.about-section .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+    padding: 0 !important;
+}
+
+.elementor-213 .elementor-element.elementor-element-be4473f {
+    width: 80% !important;
+}
+
+@media only screen and (min-width: 1600px) {
+    .about-top .logo-about .elementor-widget-wrap {
+        margin-right: 0;
+    }
+}
+
+
+/* about */

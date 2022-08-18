@@ -129,7 +129,13 @@ class WP_Post_Modal_Public
     {
         $styled = (get_option('wp_post_modal_styling') === '1' ? 'styled' : '');
 
-        $close = (get_option('wp_post_modal_close') != '' ? get_option('wp_post_modal_close') : '×');
+        $close = (get_option('wp_post_modal_close') != '' ? get_option('wp_post_modal_close') : '<svg xmlns="http://www.w3.org/2000/svg" width="38.707" height="38.707" viewBox="0 0 38.707 38.707">
+        <g id="Group_8" data-name="Group 8" transform="translate(-1801.146 -64.146)">
+          <line id="Line_1" data-name="Line 1" x2="38" y2="38" transform="translate(1801.5 64.5)" fill="none" stroke="#707070" stroke-width="1"/>
+          <line id="Line_2" data-name="Line 2" x1="38" y2="38" transform="translate(1801.5 64.5)" fill="none" stroke="#707070" stroke-width="1"/>
+        </g>
+      </svg>
+      ');
 
         $HTML = '<div class="modal-wrapper ' . $styled . '" role="dialog" aria-modal="true"  aria-label="' . __('Popup Dialog', 'wp-post-modal') . '">';
         $HTML .= '<div class="wp-post-modal">';
