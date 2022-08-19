@@ -65,3 +65,13 @@ add_action('wp_head','get_hompage_script');
 
 
 add_action('homepage_style','get_homepage_sytle',0);
+
+
+function your_theme_add_menu_link_class( $classes, $item ) {
+    $classes['class'] = "nav-link"; // Add class to every "<a>" tags
+    if ( in_array('current-menu-item', $item->classes) ) {
+        $classes['class'] = 'nav-link active'; // Add class to current menu item's "<a>" tag
+    }
+    return $classes;
+}
+add_filter( 'nav_menu_link_attributes', 'your_theme_add_menu_link_class', 10, 2 );
