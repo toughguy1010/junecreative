@@ -18,6 +18,10 @@
     src: url(../fonts/GillSans-Light-08.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
     width: 0px;
 }
@@ -54,7 +58,7 @@
     text-transform: uppercase;
 }
 
-.active {
+.active-nav-link {
     font-family: 'BlairBold';
     color: #ffff;
 }

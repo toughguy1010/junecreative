@@ -68,9 +68,9 @@ add_action('homepage_style','get_homepage_sytle',0);
 
 
 function your_theme_add_menu_link_class( $classes, $item ) {
-    $classes['class'] = "nav-link"; // Add class to every "<a>" tags
+    $classes['class'] = "anchor-link"; // Add class to every "<a>" tags
     if ( in_array('current-menu-item', $item->classes) ) {
-        $classes['class'] = 'nav-link active'; // Add class to current menu item's "<a>" tag
+        $classes['class'] = 'anchor-link active-nav-link'; // Add class to current menu item's "<a>" tag
     }
     return $classes;
 }
